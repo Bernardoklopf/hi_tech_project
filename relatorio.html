@@ -17,9 +17,9 @@
 <!-- MENU DE NAVEGAÇÃO -->
 <div class="topnav">
     <a href="http://hitechnologies.com.br/site/pt/home/"><img src="hi.png" alt="Farmacia" style="width:25px"></a>
-    <a class="active" href="index.html">Cadastro</a>
+    <a href="index.html">Cadastro</a>
     <a href="listagem.html">Listagem</a>
-    <a href="relatorio.html">Relatorio</a>
+    <a class="active" href="relatorio.html">Relatorio</a>
     <div class="search-container">
         <form>
             <input type="text" placeholder="Procurar Farmacia..." name="search">
@@ -28,29 +28,18 @@
     </div>
 </div>
 <!-- CONTEUDO DA PAGINA -->
-<div class="w3-container w3-margin" style="display: flex; justify-content: center">
-    <form style="width: 60%; display: flex; flex-flow: row wrap; justify-content: center;">
-        <h2>Registrar Farmacia</h2>
-        <div class="input-container">
-            <div style="width:10%;text-align: right">
-                <i class="fas fa-clinic-medical icon_size w3-margin"></i>
-            </div>
-            <input class="input-field" type="text" placeholder="Nome da Farmacia" name="nome">
-        </div>
-        <div class="input-container">
-            <div style="width:10%; text-align: right">
-                <i class="fas fa-map-marker-alt icon_size w3-margin"></i>
-            </div>
-            <input class="input-field" type="text" placeholder="Endereço" name="endereco">
-        </div>
-        <div style="width: 30%;">
-            <button type="submit" class="btn w3-round-large">Salvar</button>
-        </div>
-    </form>
+<div class="bargraph" style= "width: 365px;">
+    <ul class="bars">
+        <li class="bar1 purplebar" style="height: 25px;"><span>5</span></li>
+        <li class="bar2 redbar" style="height: 130px;">25</li>
+        <li class="bar3 bluebar" style="height: 145px;">29</li>
+        <li class="bar4 greenbar" style="height: 150px;">30</li>
+        <li class="bar5 orangebar" style="height: 120px;">24</li>
+    </ul>
+    <ul class="label"><li>SC</li><li>PR</li><li>SP</li><li>BH</li><li>RJ</li></ul>
+    <ul class="y-axis"><li>40</li><li>30</li><li>20</li><li>10</li><li>0</li></ul>
+    <p class="centered">Numero de Estabelecimentos por Região</p>
 </div>
 
 
 </body>
-</html>
-
-

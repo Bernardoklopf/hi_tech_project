@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
-
+<!-- MENU DE NAVEGAÇÃO -->
 <div class="topnav">
     <a href="http://hitechnologies.com.br/site/pt/home/"><img src="hi.png" alt="Farmacia" style="width:25px"></a>
     <a href="index.html">Cadastro</a>
     <a class="active" href="listagem.html">Listagem</a>
-    <a href="#contact">Relatorio</a>
+    <a href="relatorio.html">Relatorio</a>
     <div class="search-container">
         <form>
             <input type="text" placeholder="Procurar Farmacia..." name="search">
@@ -27,74 +27,131 @@
         </form>
     </div>
 </div>
+<!-- CONTEUDO DA PAGINA -->
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <h2>Nome da Farmacia</h2>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fechar">&times;
+            </span>
+            <img src="farmacia.jpg" alt="Farmacia" class="avatar">
+        </div>
+        <div class="container">
+            <div class="input-container">
+                <div style="width:10%;text-align: right">
+                    <i class="fas fa-clinic-medical icon_size w3-margin"></i>
+                </div>
+                <input class="input-field" type="text" placeholder="Nome da Farmacia" name="nome">
+            </div>
+            <div class="input-container">
+                <div style="width:10%; text-align: right">
+                    <i class="fas fa-map-marker-alt icon_size w3-margin"></i>
+                </div>
+                <input class="input-field" type="text" placeholder="Endereço" name="endereco">
+            </div>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button class="w3-button w3-round-xlarge w3-red" type="button"
+            onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+            <button class="w3-button w3-round-xlarge w3-green float_right"
+                    type="submit">Salvar</button>
+        </div>
+    </form>
+</div>
 
 <div class="flex-container">
-    <div class="w3-container w3-margin-top" style="width:30%">
+    <div id="card01" class="w3-container w3-margin-top" style="width:30%">
         <div class="w3-card w3-round-xlarge w3-hover-shadow card-farmacia" >
             <div class="w3-container w3-center">
                 <h3>Nome da Farmacia</h3>
                 <img src="farmacia.jpg" alt="Farmacia" style="width:80%">
                 <h5>Endereço: Rua Jose da Cruz, 55 - Curitiba</h5>
                 <div class="w3-section">
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green">Editar</button>
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red">Excluir</button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green"
+                            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Editar
+                    </button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red"
+                            onclick="document.getElementById('card01').style.display='none'">Excluir</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w3-container w3-margin-top" style="width:30%">
+    <div id="card02" class="w3-container w3-margin-top" style="width:30%">
         <div class="w3-card w3-round-xlarge w3-hover-shadow card-farmacia" >
             <div class="w3-container w3-center">
                 <h3>Nome da Farmacia</h3>
                 <img src="farmacia.jpg" alt="Farmacia" style="width:80%">
                 <h5>Endereço: Rua Jose da Cruz, 55 - Curitiba</h5>
                 <div class="w3-section">
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green">Editar</button>
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red">Excluir</button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green"
+                            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Editar
+                    </button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red"
+                            onclick="document.getElementById('card02').style.display='none'">Excluir</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w3-container w3-margin-top" style="width:30%">
+    <div id="card03" class="w3-container w3-margin-top" style="width:30%">
         <div class="w3-card w3-round-xlarge w3-hover-shadow card-farmacia" >
             <div class="w3-container w3-center">
                 <h3>Nome da Farmacia</h3>
                 <img src="farmacia.jpg" alt="Farmacia" style="width:80%">
                 <h5>Endereço: Rua Jose da Cruz, 55 - Curitiba</h5>
                 <div class="w3-section">
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green">Editar</button>
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red">Excluir</button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green"
+                            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Editar
+                    </button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red"
+                            onclick="document.getElementById('card03').style.display='none'">Excluir</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w3-container w3-margin-top" style="width:30%">
+    <div id="card04" class="w3-container w3-margin-top" style="width:30%">
         <div class="w3-card w3-round-xlarge w3-hover-shadow card-farmacia" >
             <div class="w3-container w3-center">
                 <h3>Nome da Farmacia</h3>
                 <img src="farmacia.jpg" alt="Farmacia" style="width:80%">
                 <h5>Endereço: Rua Jose da Cruz, 55 - Curitiba</h5>
                 <div class="w3-section">
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green">Editar</button>
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red">Excluir</button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green"
+                            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Editar
+                    </button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red"
+                            onclick="document.getElementById('card04').style.display='none'">Excluir</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w3-container w3-margin-top" style="width:30%">
+    <div id="card05" class="w3-container w3-margin-top" style="width:30%">
         <div class="w3-card w3-round-xlarge w3-hover-shadow card-farmacia" >
             <div class="w3-container w3-center">
                 <h3>Nome da Farmacia</h3>
                 <img src="farmacia.jpg" alt="Farmacia" style="width:80%">
                 <h5>Endereço: Rua Jose da Cruz, 55 - Curitiba</h5>
                 <div class="w3-section">
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green">Editar</button>
-                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red">Excluir</button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-green"
+                            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Editar
+                    </button>
+                    <button class="w3-button w3-round-xlarge w3-margin-right w3-margin-left w3-red"
+                            onclick="document.getElementById('card05').style.display='none'">Excluir</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
